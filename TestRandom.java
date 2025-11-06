@@ -4,9 +4,9 @@ public  class  TestRandom {
 	    int number = Integer.parseInt(args[0]);
 		int smaller = 0;
 		int bigger = 0;
+		double ratio = 0;
 		for (int i = 0; i < number; i++){
 			double random = Math.random();
-			//int y = (int) ((number + 1) ); // the number from the lottery
 		if (random <= 0.5)
 		{
 			smaller++;
@@ -18,9 +18,14 @@ public  class  TestRandom {
 		}
 		System.out.println("> 0.5: " + bigger + " times");
 		System.out.println("<= 0.5: " + smaller + " times");
-		if (smaller > 0){
-			double ratio = (double) smaller / bigger;
+		if ( bigger != 0 && smaller !=0) {
+		if (bigger >= smaller) {
+			ratio = (double) smaller / bigger;
 			System.out.println("ratio: " +  ratio);
-		} 	
+		} else {
+			ratio = (double) bigger / smaller; 
+			System.out.println("ratio: " +  ratio);
+			}
+		}	
 	}
 }
