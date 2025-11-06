@@ -7,14 +7,12 @@ public  class  TestRandom {
 		double ratio = 0;
 		for (int i = 0; i < number; i++){
 			double random = Math.random();
-		if (random <= 0.5)
-		{
+		if (random <= 0.5) {
 			smaller++;
-		}
-		else
-		{
+		  }
+		else{
 			bigger++;
-		}
+		  }
 		}
 		System.out.println("> 0.5: " + bigger + " times");
 		System.out.println("<= 0.5: " + smaller + " times");
