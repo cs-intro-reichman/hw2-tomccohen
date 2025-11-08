@@ -6,7 +6,7 @@ public class CalcPi {
 
 		for (int i = 0; i < num; i++){
 			double fraction = (1.0 / (2 * i + 1));
-			
+
 			if (i % 2 == 0){
 				sum += fraction; //calculate the sum of odds
 			} else {
@@ -14,7 +14,7 @@ public class CalcPi {
 			}
 		}
 		double pi = Math.PI;
-		System.out.println("pi according to JAVA: " + pi);
+		System.out.println("pi according to Java: " + pi);
 		System.out.println("pi, approximated:     " + sum * 4);
 		}
 	}
