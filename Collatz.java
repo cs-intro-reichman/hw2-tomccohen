@@ -33,7 +33,7 @@ public class Collatz {
 					System.out.print("(" + stepsTillOne + ")");
 					System.out.println();
 			}			
-					System.out.println("Every one of the first " + num + " hailstone sequences reached 1");
+					System.out.println("Every one of the first " + num + " hailstone sequences reached 1.");
 
 
 		} if (mode.equals("c")) {
@@ -54,7 +54,7 @@ public class Collatz {
 						} 
 					}
 				}
-					System.out.println("Every one of the first " + num + " hailstone sequences reached 1");
+					System.out.println("Every one of the first " + num + " hailstone sequences reached 1.");
 			}
 		}
 	}
